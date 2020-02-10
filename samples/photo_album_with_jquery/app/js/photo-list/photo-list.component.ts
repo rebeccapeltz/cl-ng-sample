@@ -22,11 +22,7 @@ export class PhotoListComponent implements OnInit {
 
   ngOnInit(): void {
     this.photos = this.photoAlbum.getPhotos();
-    const cld = (window as any)cloudinary.Cloudinary.new({ cloud_name: "demo"});
-    cld.videoPlayer('example-player')
-
- 
-
-
+    let cld = (window as any).cloudinary.Cloudinary.new({cloud_name: 'demo'})
+    cld.videoPlayer('example-player')  
   }
 }
