@@ -17,8 +17,8 @@ export class PhotoListComponent implements OnInit {
   private photos: Observable<Photo[]>;
 
   
-  private a1: string;
-  private a2: string;
+    private a1: string;
+    private a2: string;
 
   constructor(
     private photoAlbum: PhotoAlbum

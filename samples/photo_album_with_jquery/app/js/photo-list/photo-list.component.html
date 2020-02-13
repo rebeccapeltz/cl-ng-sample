@@ -1,4 +1,46 @@
 <div class="photo-list">
+
+<!-- a1 == 'video' and a2 = 'image' -->
+    <h3>TEST</h3>
+    <h3>This is a video and will show and autoplay</h3> 
+     <p [hidden]="!(a1 === 'video')">
+        <cl-video  
+          autoplay
+          public-id="manipulation_video"
+          cloud_name="cloudinary"
+          secure="true"
+          class="my-videos"
+          controls="true"
+        >
+        </cl-video> 
+    </p>
+ <h3>Using *ngif: This is NOT a video and will NOT show or autoplay</h3> 
+        <p *ngIf="a2 === 'video'">
+            <cl-video  
+              autoplay
+              public-id="https://res.cloudinary.com/demo/image/upload/sample"
+              cloud_name="cloudinary"
+              secure="true"
+              class="my-videos"
+              controls="true"
+            >
+            </cl-video>
+        </p> 
+
+
+ <!-- <h3>Using hidden: This is NOT a video and will NOT show or autoplay</h3> -->
+        <!-- <p [hidden]="!(a2 === 'video')">
+            <cl-video  
+              autoplay
+              public-id="https://res.cloudinary.com/demo/image/upload/sample"
+              cloud_name="cloudinary"
+              secure="true"
+              class="my-videos"
+              controls="true"
+            >
+            </cl-video>
+        </p> -->
+
     <div id="posterframe">
         <!-- This will render the fetched Facebook profile picture using Cloudinary according to the
       requested transformations. This also shows how to chain transformations -->
@@ -47,13 +89,12 @@
             >
                 <cl-transformation overlay="text:arial_20:Cloudinary%20features" color="red" gravity="north" y="12"></cl-transformation>
             </cl-video>
-         
         </p>
-        <h3>TEST</h3>
-        <p ng-show="i1 === 'image'">{{i1}}</p>
-        <p *ngIf="i1 === 'image'">{{i1}}</p>
-        <h3>This is a video and will show and autoplay</h3>
-        <p [hidden]="!(a1 === 'video')">
+       
+       
+<h3>Same tests as above but with *ngIf</h3>
+        <!-- <p *ngIf="a1 === 'video'"> -->
+            <!-- <p>
             <cl-video  
               autoplay
               public-id="manipulation_video"
@@ -63,19 +104,20 @@
               controls="true"
             >
             </cl-video> 
-        </p>
-        <h3>This is NOT a video and will NOshow and autoplay</h3>
-        <p [hidden]="!(a2 === 'video')">
+        </p> -->
+        <!-- </p> -->
+        <!-- <h3>This is NOT a video and will NOT show or autoplay</h3> -->
+        <!-- <p *ngIf="a2 === 'video'">
             <cl-video  
               autoplay
-              public-id="manipulation_video"
+              public-id="https://res.cloudinary.com/demo/image/upload/sample"
               cloud_name="cloudinary"
               secure="true"
               class="my-videos"
               controls="true"
             >
             </cl-video>
-        </p>
+        </p> -->
 
     </div>
     <hr>
