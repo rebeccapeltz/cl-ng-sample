@@ -16,6 +16,10 @@ export class PhotoListComponent implements OnInit {
 
   private photos: Observable<Photo[]>;
 
+  
+  private a1: string;
+  private a2: string;
+
   constructor(
     private photoAlbum: PhotoAlbum
   ) { }
@@ -23,6 +27,9 @@ export class PhotoListComponent implements OnInit {
   ngOnInit(): void {
     this.photos = this.photoAlbum.getPhotos();
     let cld = (window as any).cloudinary.Cloudinary.new({cloud_name: 'demo'})
-    cld.videoPlayer('example-player')  
+    cld.videoPlayer('example-player') 
+   
+    this.a1 = 'video';
+    this.a2 = 'image';
   }
 }

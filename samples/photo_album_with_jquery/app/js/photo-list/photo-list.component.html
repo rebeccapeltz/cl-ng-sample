@@ -47,7 +47,36 @@
             >
                 <cl-transformation overlay="text:arial_20:Cloudinary%20features" color="red" gravity="north" y="12"></cl-transformation>
             </cl-video>
+         
         </p>
+        <h3>TEST</h3>
+        <p ng-show="i1 === 'image'">{{i1}}</p>
+        <p *ngIf="i1 === 'image'">{{i1}}</p>
+        <h3>This is a video and will show and autoplay</h3>
+        <p [hidden]="!(a1 === 'video')">
+            <cl-video  
+              autoplay
+              public-id="manipulation_video"
+              cloud_name="cloudinary"
+              secure="true"
+              class="my-videos"
+              controls="true"
+            >
+            </cl-video> 
+        </p>
+        <h3>This is NOT a video and will NOshow and autoplay</h3>
+        <p [hidden]="!(a2 === 'video')">
+            <cl-video  
+              autoplay
+              public-id="manipulation_video"
+              cloud_name="cloudinary"
+              secure="true"
+              class="my-videos"
+              controls="true"
+            >
+            </cl-video>
+        </p>
+
     </div>
     <hr>
 

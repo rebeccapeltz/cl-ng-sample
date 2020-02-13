@@ -141,3 +141,4 @@ form .error { color: #c55; margin: 0 10px; }
     max-width: 300px;
     max-height: 150px;
 }
+[hidden] { display: none !important;}
