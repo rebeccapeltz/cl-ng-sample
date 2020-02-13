@@ -3,7 +3,7 @@
 <!-- a1 == 'video' and a2 = 'image' -->
     <h3>TEST</h3>
     <h3>This is a video and will show and autoplay</h3> 
-     <p [hidden]="!(a1 === 'video')">
+     <!-- <p [hidden]="!(a1 === 'video')"> -->
         <cl-video  
           autoplay
           public-id="manipulation_video"
@@ -13,10 +13,10 @@
           controls="true"
         >
         </cl-video> 
-    </p>
- <h3>Using *ngif: This is NOT a video and will NOT show or autoplay</h3> 
-        <p *ngIf="a2 === 'video'">
-            <cl-video  
+    <!-- </p> -->
+ <!-- <h3>Using *ngif: This is NOT a video and will NOT show or autoplay</h3>  -->
+        <!-- <p *ngIf="a2 === 'video'"> -->
+            <!-- <cl-video  
               autoplay
               public-id="https://res.cloudinary.com/demo/image/upload/sample"
               cloud_name="cloudinary"
@@ -24,8 +24,8 @@
               class="my-videos"
               controls="true"
             >
-            </cl-video>
-        </p> 
+            </cl-video> -->
+        <!-- </p>  -->
 
 
  <!-- <h3>Using hidden: This is NOT a video and will NOT show or autoplay</h3> -->

@@ -25,7 +25,7 @@ export class PhotoListComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.photos = this.photoAlbum.getPhotos();
+    this.photos = new Observable<Photo[]>();//this.photoAlbum.getPhotos();
     let cld = (window as any).cloudinary.Cloudinary.new({cloud_name: 'demo'})
     cld.videoPlayer('example-player') 
    
