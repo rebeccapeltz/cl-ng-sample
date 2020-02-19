@@ -1,10 +1,14 @@
 <div class="photo-list">
 
-<!-- a1 == 'video' and a2 = 'image' -->
+    <!-- a1 == 'video' and a2 = 'image' -->
     <h3>TEST</h3>
+<h2>Media Library</h2>
+
+    <div class="test" id="open-btn">xxx</div>
+
     <h3>This is a video and will show and autoplay</h3> 
      <!-- <p [hidden]="!(a1 === 'video')"> -->
-        <cl-video  
+        <!-- <cl-video  
           autoplay
           public-id="manipulation_video"
           cloud_name="cloudinary"
@@ -12,7 +16,7 @@
           class="my-videos"
           controls="true"
         >
-        </cl-video> 
+        </cl-video>  -->
     <!-- </p> -->
  <!-- <h3>Using *ngif: This is NOT a video and will NOT show or autoplay</h3>  -->
         <!-- <p *ngIf="a2 === 'video'"> -->
@@ -63,7 +67,7 @@
 
     <div>
         <h2>Video Player</h2>
-        <video id="example-player" controls autoplay data-cld-public-id="dog"
+        <video id="example-player" muted controls autoplay data-cld-public-id="dog"
           class="cld-video-player cld-video-player-skin-dark">
         </video>
       </div>

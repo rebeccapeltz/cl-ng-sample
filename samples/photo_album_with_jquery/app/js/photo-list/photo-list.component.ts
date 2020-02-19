@@ -31,5 +31,24 @@ export class PhotoListComponent implements OnInit {
    
     this.a1 = 'video';
     this.a2 = 'image';
+    (window as any).cloudinary.createMediaLibrary({
+      cloud_name: "picturecloud7",
+          api_key: "944887911222188",
+          button_class: "myBtn",
+          username: "rebecca.peltz@cloudinary.com",
+          button_caption: "Select Image or Video"
+    }, {
+        insertHandler: function (data) {
+          data.assets.forEach(asset => {
+            console.log("Inserted asset:",
+              JSON.stringify(asset, null, 2)) 
+          })
+        }
+      },
+        "#open-btn"
+      )
+    
   }
+
+
 }
