@@ -100,10 +100,12 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@cloudinary/angular-5.x@^1.0.1":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@cloudinary/angular-5.x/-/angular-5.x-1.0.2.tgz#b13c269faabaca88abd27e48af99c8b8102f01cf"
-  integrity sha512-5rzkMwt55a6bLAl82jlW+VhLP273Zh4O261Mjg30fUTd3hbIcUX2SdViNDRsU7k9Q8nlEeCpi2DQyeHefoloww==
+"@cloudinary/angular-5.x@^1.1.0":
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/@cloudinary/angular-5.x/-/angular-5.x-1.4.2.tgz#e608e342f3269e7ca2ad9bd0da09682e52df5a64"
+  integrity sha512-FRJvNyNM2ToRlHOu8eXgxARhl0p7A1m4rNGv5qojv/2MjdMw99UqI7I40iubKWukUVf+aB9W64EIt1KiTV+ZKg==
+  dependencies:
+    tslib "^1.9.0"
 
 "@types/events@*":
   version "3.0.0"
@@ -129,10 +131,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.0.0.tgz#d11813b9c0ff8aaca29f04cbc12817f4c7d656e5"
   integrity sha512-Jrb/x3HT4PTJp6a4avhmJCDEVrPdqLfl3e8GGMbpkGGdwAV5UGlIs4vVEfsHHfylZVOKZWpOqmqFH8CbfOZ6kg==
 
-"@types/node@^10.1.2":
-  version "10.14.6"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.14.6.tgz#9cbfcb62c50947217f4d88d4d274cc40c22625a9"
-  integrity sha512-Fvm24+u85lGmV4hT5G++aht2C5I4Z4dYlWZIh62FAfFO/TfzXtPpoLI6I7AuBWkIFqZCnhFOoTT7RjjaIL5Fjg==
+"@types/node@^10.1.4":
+  version "10.17.60"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.17.60.tgz#35f3d6213daed95da7f0f73e75bcc6980e90597b"
+  integrity sha512-F0KIgDJfy2nA3zMLmWGKxcH2ZVEtCZXHHdOQs2gSaQ27+lNeEfGxzkIw90aXswATX7AZ33tahPbzy6KAfUreVw==
 
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
@@ -4721,9 +4723,9 @@ wrappy@1:
   integrity sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
 
 ws@^6.2.1:
-  version "6.2.1"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-6.2.1.tgz#442fdf0a47ed64f59b6a5d8ff130f4748ed524fb"
-  integrity sha512-GIyAXC2cB7LjvpgMt9EKS2ldqr0MTrORaleiOno6TweZ6r3TKtoFQWay/2PceJ3RuBasOHzXNn5Lrw1X0bEjqA==
+  version "6.2.2"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-6.2.2.tgz#dd5cdbd57a9979916097652d78f1cc5faea0c32e"
+  integrity sha512-zmhltoSR8u1cnDsD43TX59mzoMZsLKqUweyYBAIvTngR3shc0W6aOZylZmq/7hqyVxPdi+5Ud2QInblgyE72fw==
   dependencies:
     async-limiter "~1.0.0"
 
